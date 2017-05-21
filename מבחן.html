@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-   <title>מבחן</title>
+    <title>מבחן</title>
     <style>
 
     </style>
@@ -15,17 +15,19 @@
 
 
     <script>
-        
-        function avgnumber(number) {
-            var number = 256;
+        function avgnumber() {
             var sum = 0;
-            var ave = 0;
-            for (i = 1; i<number; i++) {
-               sum += i;
-               ave = sum/number;
-             } return ave;
-        }
-        
+            var avg = 0;
+            var externalnumber = prompt("enter number");
+            var i = 0
+            while (externalnumber != 256) {
+                sum += externalnumber
+                i++;
+                externalnumber = prompt("enter number");
+            }
+                avg = sum / i;
+                return avg;
+            }
     </script>
 
 </body>
